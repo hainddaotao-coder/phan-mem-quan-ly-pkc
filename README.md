@@ -1,12 +1,21 @@
-# PKC Work Management
+# PKC Work Management v3
 
 Phần mềm quản lý dự án cho Nhà thuốc Việt Bảo, PKC Pet Center và PKC Equine Center.
 
-## Chạy thử
+## Chức năng
+
+- Đăng nhập Supabase và phân quyền Admin, Manager, Observer, Leader.
+- Tổng quan, lọc và tìm kiếm dự án.
+- Tạo, chỉnh sửa dự án; cập nhật trạng thái, tiến độ, khó khăn và đề nghị hỗ trợ.
+- Quản lý đầu việc, đánh dấu hoàn thành và phân công nhân sự.
+- Nhật ký cập nhật, bình luận, ý kiến chỉ đạo và link tài liệu.
+- Màn hình công việc, lịch deadline, báo cáo và danh sách nhân sự.
+- Responsive cho máy tính, máy tính bảng và điện thoại.
+
+## Chạy dự án
 
 1. Sao chép `.env.example` thành `.env.local`.
-2. Dự án đã có sẵn Project URL và Publishable key trong `.env.example`.
-   Khi triển khai Vercel, thêm hai biến này vào Project Settings → Environment Variables.
-3. Chạy `npm install`, sau đó `npm run dev`.
+2. Chạy `npm install`.
+3. Chạy `npm run dev`.
 
-Nếu chưa có `.env.local`, ứng dụng tự mở chế độ xem thử với dữ liệu mẫu. Không dùng `service_role` hoặc secret key trong ứng dụng.
+Khi triển khai Vercel, thêm `NEXT_PUBLIC_SUPABASE_URL` và `NEXT_PUBLIC_SUPABASE_ANON_KEY` trong Environment Variables. Chỉ dùng publishable/anon key; không dùng `service_role` hoặc secret key trong trình duyệt.
