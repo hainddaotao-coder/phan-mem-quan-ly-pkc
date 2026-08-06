@@ -1,4 +1,4 @@
-# PKC Work Management v3
+# PKC Work Management v5
 
 Phần mềm quản lý dự án cho Nhà thuốc Việt Bảo, PKC Pet Center và PKC Equine Center.
 
@@ -11,6 +11,15 @@ Phần mềm quản lý dự án cho Nhà thuốc Việt Bảo, PKC Pet Center v
 - Nhật ký cập nhật, bình luận, ý kiến chỉ đạo và link tài liệu.
 - Màn hình công việc, lịch deadline, báo cáo và danh sách nhân sự.
 - Responsive cho máy tính, máy tính bảng và điện thoại.
+- Tách quyền theo từng hành động: mọi tài khoản đều xem đủ các màn hình; người
+  được giao việc cập nhật việc của mình; mọi thành viên trong phạm vi dự án được
+  trao đổi và gắn tài liệu; quyền sửa dự án, chỉ đạo và quản trị vẫn theo vai trò.
+
+## Cập nhật quyền Supabase
+
+Sau khi triển khai mã nguồn, chạy một lần nội dung file
+`supabase/complete-account-capabilities.sql` trong Supabase SQL Editor. Phần này
+đồng bộ RLS với các nút cộng tác mới trên giao diện.
 
 ## Chạy dự án
 
